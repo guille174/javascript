@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sumar dos números</title>
+        <meta charset="UTF-8">
+        <style>body{background: url(https://static.laverdad.es/www/multimedia/202005/08/media/cortadas/984X608-matematicas-kaQG-U11087194903WZF-984x608@RC.jpg) ; background-repeat: no-repeat; background-size: cover;} 
+            p{text-align:center;background-color:white; font-size: 30px;font-family: 'Times New Roman', Times, serif; }
+                h1{text-align:center;background-color:white; font-size: 15px; font-family: algerian}
+                h2{background-color:white ;text-align:center; font-size: 40px; font-family: algerian}
+                b{text-align:center; font-size: 30px; font-family: algerian}
+                body{text-align:center}
+                li{text-align:center; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif}
+                ul{font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif}
+                #primero{color:tomato}       </style>
+        <p>En este script sumamos dos números</p>
+    </head>
+    <body>
+        <h1>Sumar dos números</h1>  
+        <p>Introduce dos números:</p> 
+        <input id="num1"><br>  
+        <input id="num2">  
+       <button type="button" onclick="myFunction()">Sumar</button>  
+       <p id="sumando"></p>  
+      <script>
+          window.alert ("Introduzca dos números");
+          function myFunction() {  
+          var x,y,suma,text;  
+          x = document.getElementById("num1").value;  
+          y = document.getElementById("num2").value;  
+          if (isNaN(x) || isNaN(y)) {  
+          text = "Es necesarios introducir dos números válidos";  
+          } else {  
+          //si no ponemos parseFloat concatenaría x con y  
+          suma=parseFloat(x)+parseFloat(y);  
+          text= suma;  
+          }  
+          document.getElementById("sumando").innerHTML = text;  
+          }  
+      </script> 
+    </body>
+</html>
